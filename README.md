@@ -51,7 +51,7 @@ cd purflux-scraper
 
 2️⃣ Install Dependencies
 Run the following command to install the required packages:
-npm install
+sh-> npm install
 This will install:
 -puppeteer (for browser automation)
 -fs (for file handling)
@@ -60,11 +60,9 @@ This will install:
 Once everything is installed, follow these steps to run the scraper:
 
 1️⃣ Open your terminal and navigate to the project directory:
-
 sh-> cd purflux-scraper
 
 2️⃣ Run the scraper
-
 sh-> node index.js
 This will:
 -Launch a headless browser.
@@ -74,9 +72,8 @@ This will:
 
 3️⃣ View the Extracted Data
 After the script completes execution, you can find the extracted product details in:
-
 output.json
-This file contains all the scraped product details in JSON format.
+-This file contains all the scraped product details in JSON format.
 
 ---
 
@@ -85,10 +82,10 @@ This file contains all the scraped product details in JSON format.
 2️⃣ Select the "Reference" tab and extract all available product references.
 3️⃣ Navigate to each product’s page and extract:
 
--IAM_PN
--Product Name
--Product Line
--Dimensions (Height, Length, Width)
--OE Part Numbers
--Vehicle Applications
+- **Product Code (IAM_PN)**
+- **Product Name**
+- **Product Line**
+- **Dimensions**
+- **OE Part Numbers**
+- **Vehicle Application Details**
 4️⃣ Store the extracted data in output.json in a structured format.
